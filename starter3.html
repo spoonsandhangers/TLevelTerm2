@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Starter Lesson 3</h2>
+
+<p>Cats are the best!</p>
+<p>Dogs are the best!</p>
+<p>Sloths are the best!</p>
+
+<p id="demo"></p>
+
+<script>
+const myCollection = document.getElementsByTagName("p");
+for (let i in myCollection){
+    console.log(myCollection[i].innerHTML);
+}
+document.getElementById("demo").innerHTML = "The truth is: " 
+                    + myCollection[Math.floor(Math.random() * 3)].innerHTML;
+
+</script>
+</body>
+</html>
+
+
