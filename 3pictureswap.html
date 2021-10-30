@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1 style="font-size:8vw">The image will swap depending on the size of the browser window.</h1>
+<p>It will swap at 283px and 522px</p>
+<picture>
+  <source srcset="pluto.png" media="(max-width: 283px)">
+  <source srcset="mars.png" media="(max-width: 522px)">
+  <source srcset="jupiter.png">
+  <img src="mars.png" alt="Planet" style="width:auto;">
+</picture>
+</body>
+</html>
+
